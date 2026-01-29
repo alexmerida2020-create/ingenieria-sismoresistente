@@ -45,29 +45,7 @@ Este proyecto es un sitio web educativo diseñado para complementar el aprendiza
 - ✅ Reflexiones sobre ética profesional
 - ✅ Un solo archivo HTML (fácil de compartir y desplegar)
 
-## 📦 Uso
 
-### Opción 1: Visualización local
-1. Descarga el archivo `ingenieria-sismoresistente.html`
-2. Ábrelo con cualquier navegador web moderno (Chrome, Firefox, Edge, Safari)
-
-### Opción 2: Despliegue en GitHub Pages
-1. Haz fork de este repositorio
-2. Ve a Settings → Pages
-3. Selecciona la rama `main` como fuente
-4. Tu sitio estará disponible en: `https://tu-usuario.github.io/ingenieria-sismoresistente/`
-
-### Opción 3: Despliegue en otros servicios
-- **Netlify**: Arrastra y suelta el archivo HTML
-- **Vercel**: Importa el repositorio
-- **GitHub Pages**: Renombra el archivo a `index.html`
-
-## 🛠️ Tecnologías utilizadas
-
-- HTML5
-- CSS3 (Flexbox, Grid, Gradientes, Animaciones)
-- JavaScript (ES6+)
-- Diseño responsive sin frameworks externos
 
 ## 📚 Para estudiantes
 
@@ -88,9 +66,6 @@ Las contribuciones son bienvenidas. Si deseas mejorar el contenido:
 4. Push a la rama (`git push origin feature/mejora`)
 5. Abre un Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ## ✍️ Autor
 
