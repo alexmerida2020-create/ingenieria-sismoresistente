@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería Sismoresistente - Material Educativo</title>
+    <title>Didáctica en Ingeniería Sismoresistente</title>
     <style>
         * {
             margin: 0;
@@ -50,6 +50,7 @@
         .author {
             color: #888;
             font-style: italic;
+            margin-top: 10px;
         }
 
         nav {
@@ -133,28 +134,19 @@
             margin-bottom: 15px;
         }
 
+        h4 {
+            color: #1e3c72;
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
         .definition-box {
             background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
             padding: 25px;
             border-radius: 10px;
             margin: 20px 0;
             border-left: 5px solid #1e3c72;
-        }
-
-        .warning-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border-left: 5px solid #f59e0b;
-        }
-
-        .danger-box {
-            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border-left: 5px solid #dc2626;
         }
 
         .example-box {
@@ -170,14 +162,14 @@
             margin-bottom: 10px;
         }
 
-        .concept-grid {
+        .strategy-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin: 20px 0;
         }
 
-        .concept-card {
+        .strategy-card {
             background: white;
             border: 2px solid #1e3c72;
             padding: 20px;
@@ -185,16 +177,10 @@
             transition: all 0.3s ease;
         }
 
-        .concept-card:hover {
+        .strategy-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(30,60,114,0.3);
             border-color: #dc2626;
-        }
-
-        .concept-card h4 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-            font-size: 1.2em;
         }
 
         .infografia {
@@ -257,12 +243,12 @@
             background: #f0f9ff;
         }
 
-        .method-list {
+        .technique-list {
             list-style: none;
             padding: 0;
         }
 
-        .method-list li {
+        .technique-list li {
             background: #f0f9ff;
             padding: 15px;
             margin: 10px 0;
@@ -271,19 +257,9 @@
             transition: all 0.3s ease;
         }
 
-        .method-list li:hover {
+        .technique-list li:hover {
             transform: translateX(10px);
             background: #dbeafe;
-        }
-
-        .formula-box {
-            background: #1e293b;
-            color: #e2e8f0;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
         }
 
         .reflection-box {
@@ -298,15 +274,12 @@
             color: #92400e;
         }
 
-        .image-placeholder {
+        .purpose-box {
             background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-            border: 3px dashed #4f46e5;
+            padding: 25px;
             border-radius: 10px;
-            padding: 60px 20px;
-            text-align: center;
             margin: 20px 0;
-            color: #4f46e5;
-            font-weight: bold;
+            border-left: 5px solid #4f46e5;
         }
 
         footer {
@@ -337,591 +310,598 @@
             }
         }
 
-        .code-block {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px 0;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9em;
+        p {
+            margin: 10px 0;
+        }
+
+        ul, ol {
+            margin: 10px 0 10px 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🏗️ Ingeniería Sismoresistente</h1>
-            <p class="subtitle">Material Educativo - Carrera de Ingeniería Civil</p>
-            <p class="author">Fundamentos para el diseño de estructuras seguras</p>
+            <h1>🎓 Didáctica en Ingeniería Sismoresistente</h1>
+            <p class="subtitle">Estrategias y Técnicas para la Enseñanza Efectiva</p>
+            <p class="author">Carrera de Ingeniería Civil - Material Didáctico Digital</p>
         </header>
 
         <nav>
             <ul>
                 <li><button onclick="showSection('inicio')" class="active">Inicio</button></li>
-                <li><button onclick="showSection('fundamentos')">Fundamentos</button></li>
-                <li><button onclick="showSection('metodos')">Métodos de Análisis</button></li>
-                <li><button onclick="showSection('normativas')">Normativas</button></li>
-                <li><button onclick="showSection('casos')">Casos de Estudio</button></li>
+                <li><button onclick="showSection('didactica')">¿Qué es Didáctica?</button></li>
+                <li><button onclick="showSection('estrategias')">Estrategias Didácticas</button></li>
+                <li><button onclick="showSection('tecnicas')">Técnicas Didácticas</button></li>
+                <li><button onclick="showSection('material')">Mi Material Didáctico</button></li>
             </ul>
         </nav>
 
         <!-- SECCIÓN INICIO -->
         <section id="inicio" class="section active">
             <h2>Bienvenido</h2>
-            <p style="font-size: 1.2em; margin: 20px 0;">Este sitio web ha sido diseñado como un recurso educativo para estudiantes de Ingeniería Civil, proporcionando conocimientos fundamentales sobre el diseño y análisis de estructuras capaces de resistir eventos sísmicos.</p>
             
-            <div class="definition-box">
-                <h3>Propósito del sitio</h3>
-                <p>Ofrecer una guía práctica y teórica sobre los principios de la ingeniería sismoresistente, incluyendo métodos de análisis, normativas vigentes, casos de estudio y recursos didácticos que faciliten la comprensión de los conceptos fundamentales para diseñar estructuras seguras y resilientes.</p>
+            <div class="purpose-box">
+                <h3>📚 Presentación del autor</h3>
+                <p>Soy estudiante de Ingeniería Civil con especialización en Ingeniería Sismoresistente. Este sitio web representa mi trabajo de investigación sobre la aplicación de metodologías didácticas en la enseñanza de conceptos técnicos complejos relacionados con el diseño y análisis de estructuras ante eventos sísmicos.</p>
             </div>
 
-            <div class="danger-box">
-                <h4>⚠️ Importancia de la Ingeniería Sismoresistente</h4>
-                <p>Los sismos son fenómenos naturales inevitables que pueden causar pérdidas humanas y materiales devastadoras. La ingeniería sismoresistente no solo salva vidas, sino que también protege la inversión en infraestructura y garantiza la continuidad de servicios esenciales después de un evento sísmico.</p>
+            <div class="purpose-box">
+                <h3>🎯 Propósito de la web</h3>
+                <p>Este sitio ha sido diseñado con el objetivo de demostrar cómo la didáctica, las estrategias didácticas y las técnicas didácticas pueden aplicarse efectivamente en la enseñanza de Ingeniería Sismoresistente. A través de ejemplos concretos de mi área de estudio, ilustraré:</p>
+                <ul style="margin-top: 10px;">
+                    <li>Los fundamentos de la didáctica aplicada a ingeniería</li>
+                    <li>Estrategias didácticas específicas para enseñar conceptos técnicos complejos</li>
+                    <li>Técnicas prácticas que facilitan el aprendizaje significativo</li>
+                    <li>Material didáctico original que integra todos estos elementos</li>
+                </ul>
             </div>
 
             <h3>Contenido del sitio:</h3>
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <h4>🌍 Fundamentos Sísmicos</h4>
-                    <p>Origen de los sismos, tipos de ondas sísmicas y efectos en las estructuras</p>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>📖 Didáctica</h4>
+                    <p>Fundamentos teóricos y aplicación práctica en la enseñanza de ingeniería sismoresistente</p>
                 </div>
-                <div class="concept-card">
-                    <h4>📊 Métodos de Análisis</h4>
-                    <p>Análisis estático, dinámico modal y tiempo-historia</p>
+                <div class="strategy-card">
+                    <h4>🎯 Estrategias Didácticas</h4>
+                    <p>Planes organizados para alcanzar objetivos de aprendizaje en temas técnicos</p>
                 </div>
-                <div class="concept-card">
-                    <h4>📋 Normativas</h4>
-                    <p>Códigos de diseño y requisitos normativos internacionales</p>
+                <div class="strategy-card">
+                    <h4>🛠️ Técnicas Didácticas</h4>
+                    <p>Herramientas específicas para implementar las estrategias en el aula</p>
                 </div>
-                <div class="concept-card">
-                    <h4>🏢 Casos de Estudio</h4>
-                    <p>Análisis de sismos históricos y respuesta estructural</p>
+                <div class="strategy-card">
+                    <h4>💎 Material Didáctico</h4>
+                    <p>Recursos visuales, secuencias y reflexiones originales</p>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN FUNDAMENTOS -->
-        <section id="fundamentos" class="section">
-            <h2>Fundamentos de Ingeniería Sismoresistente</h2>
+        <!-- SECCIÓN 1: DIDÁCTICA -->
+        <section id="didactica" class="section">
+            <h2>¿Qué es la Didáctica?</h2>
             
             <div class="definition-box">
-                <h3>¿Qué es la Ingeniería Sismoresistente?</h3>
-                <p>La ingeniería sismoresistente es la rama de la ingeniería civil que se especializa en el diseño, análisis y construcción de estructuras capaces de resistir las fuerzas sísmicas. Su objetivo principal es garantizar la seguridad de las personas y minimizar los daños materiales durante y después de un terremoto.</p>
-                <p style="margin-top: 15px;">Esta disciplina integra conocimientos de geología, sismología, dinámica estructural, mecánica de materiales y teoría de estructuras para desarrollar soluciones constructivas que consideren tanto la intensidad de los sismos como las características del suelo y la edificación.</p>
+                <h3>Definición</h3>
+                <p>La didáctica es la ciencia y arte de enseñar que estudia los procesos de enseñanza-aprendizaje. Se enfoca en cómo transmitir conocimientos de manera efectiva, considerando los contenidos a enseñar, los métodos más apropiados, las características de los estudiantes y el contexto educativo. Es tanto una disciplina teórica que investiga los principios del aprendizaje, como una práctica que proporciona herramientas concretas para facilitar la construcción del conocimiento.</p>
+                
+                <p style="margin-top: 15px;">En el contexto de la ingeniería, la didáctica adquiere especial relevancia porque debe abordar la enseñanza de conceptos técnicos complejos, matemáticos y abstractos, transformándolos en conocimientos aplicables y significativos para los futuros ingenieros.</p>
             </div>
 
-            <h3>Conceptos fundamentales:</h3>
+            <h3>Elementos fundamentales de la didáctica:</h3>
+            <ul class="technique-list">
+                <li><strong>El docente:</strong> Facilitador y guía del proceso de aprendizaje</li>
+                <li><strong>El estudiante:</strong> Protagonista activo que construye su conocimiento</li>
+                <li><strong>Los contenidos:</strong> Conocimientos, habilidades y competencias a desarrollar</li>
+                <li><strong>El contexto:</strong> Ambiente físico, social y tecnológico del aprendizaje</li>
+                <li><strong>Los métodos:</strong> Caminos y procedimientos para alcanzar los objetivos</li>
+            </ul>
 
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <h4>🌊 Ondas Sísmicas</h4>
-                    <p><strong>Ondas P (Primarias):</strong> Compresionales, más rápidas, menor daño</p>
-                    <p><strong>Ondas S (Secundarias):</strong> Cortantes, más lentas, mayor energía</p>
-                    <p><strong>Ondas Superficiales:</strong> Love y Rayleigh, mayor destructividad</p>
-                </div>
+            <div class="example-box">
+                <h4>💡 Ejemplo de aplicación didáctica en Ingeniería Sismoresistente</h4>
+                <p><strong>Situación de aula:</strong> Un profesor debe enseñar el concepto de "periodo fundamental de vibración" a estudiantes de sexto semestre de Ingeniería Civil.</p>
                 
-                <div class="concept-card">
-                    <h4>📏 Escalas Sísmicas</h4>
-                    <p><strong>Magnitud (Richter/Momento):</strong> Energía liberada en el foco</p>
-                    <p><strong>Intensidad (Mercalli):</strong> Efectos observados en superficie</p>
-                    <p><strong>PGA:</strong> Aceleración máxima del suelo</p>
-                </div>
+                <p style="margin-top: 15px;"><strong>Desafío didáctico:</strong></p>
+                <p>El periodo fundamental es un concepto abstracto y matemático que los estudiantes deben comprender profundamente porque determina cómo una estructura responderá ante un sismo. Si no se comprende bien, pueden cometer errores graves en el diseño.</p>
+
+                <p style="margin-top: 15px;"><strong>Aplicación didáctica paso a paso:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Activación de conocimientos previos:</strong> El profesor pregunta: "¿Qué pasa cuando empujan un columpio? ¿Por qué algunos columpios se mueven más rápido que otros?"</li>
+                    
+                    <li><strong>Demostración física:</strong> Trae dos varillas de distinta longitud y las hace vibrar frente a la clase. Los estudiantes observan que la más larga vibra más lentamente.</li>
+                    
+                    <li><strong>Conexión con lo cotidiano:</strong> Explica que los edificios altos "se mueven" más lentamente durante un sismo, como la varilla larga, mientras que los edificios bajos vibran más rápidamente.</li>
+                    
+                    <li><strong>Introducción de la fórmula:</strong> Presenta T = 2π√(m/k), explicando cada variable con ejemplos concretos de edificios.</li>
+                    
+                    <li><strong>Ejercicio práctico:</strong> Los estudiantes calculan el periodo de un edificio de 5 pisos y luego de uno de 20 pisos, comparando resultados.</li>
+                    
+                    <li><strong>Aplicación al diseño:</strong> Muestra cómo ese valor se usa para obtener la aceleración espectral del espectro de respuesta sísmica.</li>
+                    
+                    <li><strong>Evaluación formativa:</strong> Pregunta: "Si dos edificios tienen la misma altura pero uno es de concreto y otro de acero, ¿cuál tendrá mayor periodo? ¿Por qué?"</li>
+                </ol>
+
+                <p style="margin-top: 15px;"><strong>Resultado didáctico:</strong></p>
+                <p>El profesor ha aplicado principios didácticos al partir de lo conocido (columpio) hacia lo desconocido (periodo estructural), utilizar múltiples representaciones (visual, matemática, práctica), promover la participación activa, y conectar la teoría con la aplicación real en diseño estructural. Los estudiantes no solo memorizan una fórmula, sino que comprenden el concepto profundamente.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: ESTRATEGIAS DIDÁCTICAS -->
+        <section id="estrategias" class="section">
+            <h2>Estrategias Didácticas</h2>
+            
+            <div class="definition-box">
+                <h3>Definición</h3>
+                <p>Las estrategias didácticas son planes de acción organizados y sistemáticos que el docente diseña e implementa para facilitar el aprendizaje de contenidos específicos y el desarrollo de competencias en los estudiantes. Son procedimientos estructurados que integran objetivos, contenidos, métodos, actividades y evaluación, guiando el proceso educativo hacia metas de aprendizaje determinadas.</p>
                 
-                <div class="concept-card">
-                    <h4>⚡ Respuesta Estructural</h4>
-                    <p><strong>Periodo fundamental:</strong> Tiempo de vibración natural</p>
-                    <p><strong>Ductilidad:</strong> Capacidad de deformación inelástica</p>
-                    <p><strong>Amortiguamiento:</strong> Disipación de energía</p>
+                <p style="margin-top: 15px;">Una estrategia didáctica responde a las preguntas: ¿qué enseñar?, ¿cómo enseñarlo?, ¿cuándo y en qué secuencia?, ¿con qué recursos?, y ¿cómo evaluar el aprendizaje? Es más amplia que una técnica; es el plan general que da coherencia y dirección a toda una unidad de enseñanza.</p>
+            </div>
+
+            <h3>Ejemplos aplicados de estrategias didácticas:</h3>
+
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>1️⃣ Estrategia: Aprendizaje Basado en Problemas (ABP)</h4>
+                    <p><strong>Descripción:</strong> Los estudiantes aprenden al enfrentarse a problemas reales o simulados que deben resolver mediante investigación, análisis y trabajo colaborativo.</p>
+                    
+                    <p style="margin-top: 15px;"><strong>Ejemplo aplicado en Ingeniería Sismoresistente:</strong></p>
+                    <p><strong>Problema planteado:</strong> "Un cliente les solicita diseñar un edificio de oficinas de 8 pisos en una zona de alta sismicidad. El terreno disponible tiene 20m x 30m. Deben proponer el sistema estructural más adecuado y justificar su elección."</p>
+                    
+                    <p style="margin-top: 10px;"><strong>Proceso de la estrategia:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 5px;">
+                        <li><strong>Fase 1 - Planteamiento:</strong> Se presenta el problema con planos del terreno, información del suelo y requisitos del cliente</li>
+                        <li><strong>Fase 2 - Análisis:</strong> Los estudiantes identifican qué necesitan saber (cargas sísmicas, sistemas estructurales, limitaciones espaciales)</li>
+                        <li><strong>Fase 3 - Investigación:</strong> Consultan normativas, investigan opciones (pórticos, muros de corte, sistemas duales)</li>
+                        <li><strong>Fase 4 - Propuesta:</strong> Desarrollan 2-3 alternativas con predimensionamiento básico</li>
+                        <li><strong>Fase 5 - Evaluación:</strong> Comparan alternativas (costo, eficiencia, facilidad constructiva)</li>
+                        <li><strong>Fase 6 - Presentación:</strong> Defienden su propuesta ante el profesor y compañeros</li>
+                    </ul>
+                    
+                    <p style="margin-top: 10px;"><strong>Ventajas:</strong> Desarrolla pensamiento crítico, integra múltiples conocimientos, simula situaciones profesionales reales, fomenta el autoaprendizaje.</p>
                 </div>
 
-                <div class="concept-card">
-                    <h4>🏗️ Sistemas Estructurales</h4>
-                    <p><strong>Pórticos:</strong> Mayor ductilidad</p>
-                    <p><strong>Muros de corte:</strong> Mayor rigidez</p>
-                    <p><strong>Sistemas duales:</strong> Combinación óptima</p>
+                <div class="strategy-card">
+                    <h4>2️⃣ Estrategia: Aprendizaje Cooperativo</h4>
+                    <p><strong>Descripción:</strong> Los estudiantes trabajan en equipos heterogéneos donde cada miembro tiene roles específicos y el éxito individual depende del éxito grupal. Se promueve la interdependencia positiva y la responsabilidad individual.</p>
+                    
+                    <p style="margin-top: 15px;"><strong>Ejemplo aplicado en Ingeniería Sismoresistente:</strong></p>
+                    <p><strong>Actividad:</strong> "Análisis comparativo del desempeño de edificios durante el terremoto de Chile 2010"</p>
+                    
+                    <p style="margin-top: 10px;"><strong>Organización de la estrategia:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 5px;">
+                        <li><strong>Formación de equipos:</strong> 4 estudiantes por grupo con roles definidos:
+                            <ul style="margin-left: 20px;">
+                                <li>Coordinador: organiza el trabajo y tiempos</li>
+                                <li>Investigador técnico: busca datos del sismo y estructuras</li>
+                                <li>Analista estructural: interpreta modos de falla</li>
+                                <li>Comunicador: prepara la presentación</li>
+                            </ul>
+                        </li>
+                        <li><strong>Asignación de casos:</strong> Cada grupo analiza un tipo de estructura diferente (edificios altos con muros, edificios de pórticos, viviendas de albañilería, puentes)</li>
+                        <li><strong>Investigación colaborativa:</strong> El equipo recopila información sobre daños observados, sistemas estructurales, deficiencias constructivas</li>
+                        <li><strong>Técnica "Jigsaw":</strong> Miembros con el mismo rol de diferentes grupos se reúnen para compartir hallazgos (todos los investigadores técnicos juntos, etc.)</li>
+                        <li><strong>Síntesis grupal:</strong> Cada equipo consolida aprendizajes y prepara conclusiones</li>
+                        <li><strong>Presentación cruzada:</strong> Cada grupo presenta y los demás formulan preguntas técnicas</li>
+                        <li><strong>Evaluación mixta:</strong> 60% nota grupal + 40% evaluación individual de comprensión</li>
+                    </ul>
+                    
+                    <p style="margin-top: 10px;"><strong>Ventajas:</strong> Desarrolla habilidades de comunicación, responsabilidad compartida, aprendizaje entre pares, preparación para trabajo profesional en equipo.</p>
                 </div>
             </div>
 
             <div class="example-box">
-                <h4>💡 Ejemplo Práctico: Comportamiento de un edificio durante un sismo</h4>
-                <p><strong>Situación:</strong> Edificio de 8 pisos con pórticos de concreto armado ubicado en zona sísmica alta.</p>
-                
-                <p style="margin-top: 15px;"><strong>Secuencia de respuesta estructural:</strong></p>
-                <ol style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>T = 0 seg:</strong> Llegan las ondas P, vibración vertical leve</li>
-                    <li><strong>T = 2-3 seg:</strong> Llegan ondas S, comienza movimiento lateral significativo</li>
-                    <li><strong>T = 5-20 seg:</strong> Resonancia si el periodo del sismo coincide con el periodo natural del edificio</li>
-                    <li><strong>Respuesta:</strong> Los pórticos se deforman lateralmente (deriva de entrepiso), las vigas y columnas entran en su rango inelástico formando rótulas plásticas</li>
-                    <li><strong>Mecanismo de colapso evitado:</strong> Las rótulas plásticas disipan energía, el edificio se deforma pero no colapsa</li>
-                </ol>
-                
-                <p style="margin-top: 15px;"><strong>Principio clave:</strong> "La estructura debe ser fuerte para resistir sismos moderados sin daño, y dúctil para sobrevivir sismos severos con daño controlado pero sin colapso."</p>
-            </div>
-
-            <div class="warning-box">
-                <h4>⚠️ Factores que afectan la respuesta sísmica</h4>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Tipo de suelo (roca firme vs. suelos blandos)</li>
-                    <li>Distancia al epicentro</li>
-                    <li>Magnitud y duración del sismo</li>
-                    <li>Contenido de frecuencias de las ondas sísmicas</li>
-                    <li>Irregularidades en planta y elevación de la estructura</li>
-                    <li>Calidad de los materiales y procesos constructivos</li>
-                </ul>
+                <h4>📊 Comparación de estrategias didácticas</h4>
+                <table>
+                    <tr>
+                        <th>Estrategia</th>
+                        <th>Foco principal</th>
+                        <th>Rol del docente</th>
+                        <th>Rol del estudiante</th>
+                        <th>Mejor aplicación</th>
+                    </tr>
+                    <tr>
+                        <td><strong>ABP</strong></td>
+                        <td>Resolución de problemas complejos</td>
+                        <td>Facilitador y guía</td>
+                        <td>Investigador autónomo</td>
+                        <td>Proyectos integradores</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aprendizaje Cooperativo</strong></td>
+                        <td>Colaboración e interdependencia</td>
+                        <td>Organizador y mediador</td>
+                        <td>Colaborador responsable</td>
+                        <td>Análisis de casos complejos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clase Invertida</strong></td>
+                        <td>Autonomía y práctica en aula</td>
+                        <td>Curador de recursos</td>
+                        <td>Autogestor del aprendizaje</td>
+                        <td>Contenidos teóricos extensos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estudio de Casos</strong></td>
+                        <td>Análisis de situaciones reales</td>
+                        <td>Presentador y moderador</td>
+                        <td>Analista crítico</td>
+                        <td>Fallas estructurales históricas</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
-        <!-- SECCIÓN MÉTODOS DE ANÁLISIS -->
-        <section id="metodos" class="section">
-            <h2>Métodos de Análisis Sísmico</h2>
+        <!-- SECCIÓN 3: TÉCNICAS DIDÁCTICAS -->
+        <section id="tecnicas" class="section">
+            <h2>Técnicas Didácticas</h2>
             
             <div class="definition-box">
-                <h3>Clasificación de Métodos</h3>
-                <p>Los métodos de análisis sísmico permiten evaluar la respuesta de las estructuras ante cargas sísmicas. Se clasifican según su complejidad, precisión y aplicabilidad, desde métodos simplificados hasta análisis dinámicos no lineales.</p>
+                <h3>Definición</h3>
+                <p>Las técnicas didácticas son herramientas o procedimientos específicos y concretos que el docente utiliza dentro de una estrategia didáctica para lograr objetivos particulares de aprendizaje. Son las acciones puntuales, los recursos y actividades específicas que se aplican en momentos determinados de la clase.</p>
+                
+                <p style="margin-top: 15px;">Mientras que la estrategia es el plan general o la ruta a seguir, las técnicas son los pasos específicos, las herramientas concretas que se ejecutan para recorrer esa ruta. Una estrategia puede incluir múltiples técnicas, y una misma técnica puede utilizarse en diferentes estrategias según el contexto y los objetivos.</p>
             </div>
 
-            <h3>Principales métodos de análisis:</h3>
+            <h3>Lista de técnicas didácticas con aplicación en Ingeniería Sismoresistente:</h3>
 
-            <ul class="method-list">
+            <ul class="technique-list">
                 <li>
-                    <strong>1️⃣ Método Estático Equivalente (Fuerzas Laterales)</strong>
-                    <p style="margin-top: 8px;"><strong>Descripción:</strong> Simplifica las fuerzas dinámicas sísmicas en fuerzas estáticas horizontales aplicadas en cada nivel de la estructura.</p>
-                    <p><strong>Aplicable a:</strong> Estructuras regulares de baja a mediana altura (hasta 15 pisos aprox.)</p>
-                    <div class="formula-box" style="margin-top: 10px;">
-V = C × Sa × W<br>
-Donde:<br>
-V = Cortante basal<br>
-C = Factor de amplificación sísmica<br>
-Sa = Aceleración espectral<br>
-W = Peso de la estructura
-                    </div>
-                    <p style="margin-top: 10px;"><strong>Ventajas:</strong> Simple, rápido, conservador para estructuras regulares</p>
-                    <p><strong>Desventajas:</strong> No captura efectos dinámicos complejos</p>
+                    <strong>🌧️ Lluvia de ideas (Brainstorming)</strong>
+                    <p><strong>Descripción:</strong> Los estudiantes generan ideas de forma espontánea sobre un tema sin censura ni crítica inicial. Se registran todas las ideas para luego analizarlas y organizarlas.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> ABP, Aprendizaje Cooperativo</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> "¿Qué factores creen que causan que un edificio colapse durante un terremoto?" Los estudiantes aportan ideas libremente: calidad del concreto, columnas débiles, suelo blando, altura excesiva, mala conexión entre elementos, etc.</p>
                 </li>
                 
                 <li>
-                    <strong>2️⃣ Análisis Dinámico Modal Espectral</strong>
-                    <p style="margin-top: 8px;"><strong>Descripción:</strong> Descompone la respuesta estructural en modos de vibración y utiliza espectros de respuesta para cada modo.</p>
-                    <p><strong>Aplicable a:</strong> Estructuras de cualquier altura con comportamiento lineal esperado</p>
-                    <div class="formula-box" style="margin-top: 10px;">
-Proceso:<br>
-1. Determinar periodos y modos de vibración (T₁, T₂, T₃...)<br>
-2. Obtener Sa para cada periodo del espectro de diseño<br>
-3. Calcular respuesta para cada modo<br>
-4. Combinar resultados (SRSS o CQC)
-                    </div>
-                    <p style="margin-top: 10px;"><strong>Ventajas:</strong> Considera efectos dinámicos, aplicable a estructuras irregulares</p>
-                    <p><strong>Desventajas:</strong> Asume comportamiento lineal</p>
+                    <strong>📚 Estudio de casos</strong>
+                    <p><strong>Descripción:</strong> Se presenta una situación real o ficticia documentada para que los estudiantes la analicen, identifiquen problemas, comprendan causas y propongan soluciones basadas en evidencia.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> ABP, Estrategia de Análisis de Casos</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> Analizar el caso del colapso del edificio Alto Río en Concepción, Chile durante el terremoto de 2010. Los estudiantes estudian planos, informes técnicos, videos del colapso, y determinan que la causa fue el efecto de columna corta por tabiquería mal ubicada.</p>
                 </li>
                 
                 <li>
-                    <strong>3️⃣ Análisis Tiempo-Historia (Time History)</strong>
-                    <p style="margin-top: 8px;"><strong>Descripción:</strong> Integración paso a paso de las ecuaciones de movimiento usando registros sísmicos reales o sintéticos.</p>
-                    <p><strong>Aplicable a:</strong> Estructuras especiales, irregulares complejas, estudios de investigación</p>
-                    <div class="formula-box" style="margin-top: 10px;">
-M × ü(t) + C × u̇(t) + K × u(t) = -M × üg(t)<br>
-Donde:<br>
-M = Matriz de masas<br>
-C = Matriz de amortiguamiento<br>
-K = Matriz de rigidez<br>
-üg(t) = Aceleración del suelo en el tiempo
-                    </div>
-                    <p style="margin-top: 10px;"><strong>Ventajas:</strong> Más preciso, captura comportamiento no lineal</p>
-                    <p><strong>Desventajas:</strong> Computacionalmente intensivo, requiere registros sísmicos</p>
+                    <strong>❓ Preguntas guiadas (Método socrático)</strong>
+                    <p><strong>Descripción:</strong> El docente formula preguntas estratégicas secuenciales que orientan el pensamiento de los estudiantes hacia el descubrimiento de conceptos, sin darles las respuestas directamente.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> Cualquier estrategia, especialmente útil en ABP y clases magistrales activas</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> 
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>"¿Qué sucede cuando sacudes un edificio?" → Vibra</li>
+                            <li>"¿Todos los edificios vibran igual?" → No</li>
+                            <li>"¿De qué depende cómo vibra?" → De su altura, rigidez, masa</li>
+                            <li>"Si un edificio alto vibra lentamente y uno bajo vibra rápido, ¿cuál sufrirá más daño si el sismo también es lento?" → El alto, por resonancia</li>
+                        </ul>
+                    </p>
+                </li>
+                
+                <li>
+                    <strong>🗺️ Mapas conceptuales</strong>
+                    <p><strong>Descripción:</strong> Representación gráfica de conceptos y sus relaciones mediante nodos (conceptos) conectados por líneas etiquetadas (relaciones). Útil para organizar información y visualizar estructura del conocimiento.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> Aprendizaje significativo, síntesis de información, evaluación formativa</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> Crear un mapa conceptual que conecte: "Sismo" → genera → "Ondas sísmicas" → transmiten → "Energía" → produce → "Aceleraciones del suelo" → inducen → "Fuerzas inerciales" → causan → "Esfuerzos en elementos" → pueden causar → "Daño estructural".</p>
+                </li>
+                
+                <li>
+                    <strong>🎭 Simulación y juego de roles</strong>
+                    <p><strong>Descripción:</strong> Los estudiantes asumen diferentes roles o simulan situaciones para vivenciar perspectivas diversas y comprender dinámicas complejas desde múltiples ángulos.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> Aprendizaje experiencial, comprensión de procesos multidisciplinarios</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> Simulación de una reunión post-sismo donde diferentes estudiantes asumen roles: ingeniero estructural (evalúa daño), arquitecto (propone reparación), dueño del edificio (preocupado por costos), autoridad municipal (prioriza seguridad), aseguradora (analiza responsabilidades). Deben llegar a acuerdos sobre si reparar o demoler.</p>
+                </li>
+                
+                <li>
+                    <strong>📊 Demostraciones prácticas</strong>
+                    <p><strong>Descripción:</strong> El docente muestra físicamente un fenómeno, proceso o técnica mientras los estudiantes observan, toman notas y luego intentan replicarlo o comprenderlo mejor.</p>
+                    <p style="margin-top: 8px;"><strong>Estrategia donde se usa:</strong> Aprendizaje por observación, desarrollo de habilidades prácticas</p>
+                    <p style="margin-top: 8px;"><strong>Ejemplo en Ingeniería Sismoresistente:</strong> El profesor construye dos modelos simples de edificios con palitos de helado: uno sin arriostramientos y otro con arriostramientos diagonales. Los coloca sobre una plataforma vibratoria (mesa de agitación improvisada). Al activarla, los estudiantes observan que el modelo sin arriostramientos colapsa mientras el arriostrado permanece estable, comprendiendo visualmente la importancia del arriostramiento lateral.</p>
                 </li>
             </ul>
 
             <div class="example-box">
-                <h4>📐 Ejemplo: Análisis de un edificio de 5 pisos</h4>
-                <p><strong>Datos del proyecto:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Altura total: 15 m (3 m por piso)</li>
-                    <li>Sistema estructural: Pórticos de concreto armado</li>
-                    <li>Zona sísmica: Alta (Z = 0.4g)</li>
-                    <li>Tipo de suelo: S2 (suelo intermedio)</li>
-                    <li>Peso por piso: 800 kN</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Método seleccionado:</strong> Análisis Modal Espectral</p>
-                <p style="margin-top: 10px;"><strong>Proceso:</strong></p>
-                <ol style="margin-left: 20px; margin-top: 10px;">
-                    <li>Modelado en software (ETABS, SAP2000, etc.)</li>
-                    <li>Cálculo de modos de vibración → T₁ = 0.65 seg (primer modo)</li>
-                    <li>Del espectro de diseño: Sa(T₁ = 0.65s) = 1.2g</li>
-                    <li>Cortante basal del primer modo: V₁ = 0.85 × 1.2g × 4000kN = 4,080 kN</li>
-                    <li>Consideración de 3 modos (90% de masa participante)</li>
-                    <li>Combinación SRSS: V_total = 4,250 kN</li>
-                </ol>
-
-                <p style="margin-top: 15px;"><strong>Verificaciones:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>✓ Deriva de entrepiso < 0.007 (cumple)</li>
-                    <li>✓ Cortante mínimo > 80% del método estático (cumple)</li>
-                    <li>✓ Esfuerzos en elementos < Capacidad (cumple)</li>
-                </ul>
-            </div>
-
-            <h3>Comparación de métodos:</h3>
-            <table>
-                <tr>
-                    <th>Criterio</th>
-                    <th>Estático Equivalente</th>
-                    <th>Modal Espectral</th>
-                    <th>Tiempo-Historia</th>
-                </tr>
-                <tr>
-                    <td>Complejidad</td>
-                    <td>Baja</td>
-                    <td>Media</td>
-                    <td>Alta</td>
-                </tr>
-                <tr>
-                    <td>Precisión</td>
-                    <td>Aceptable</td>
-                    <td>Buena</td>
-                    <td>Muy alta</td>
-                </tr>
-                <tr>
-                    <td>Tiempo de cálculo</td>
-                    <td>Minutos</td>
-                    <td>Minutos-Horas</td>
-                    <td>Horas-Días</td>
-                </tr>
-                <tr>
-                    <td>Estructuras aplicables</td>
-                    <td>Regulares, bajas</td>
-                    <td>Cualquiera</td>
-                    <td>Complejas, especiales</td>
-                </tr>
-                <tr>
-                    <td>Software requerido</td>
-                    <td>Básico o manual</td>
-                    <td>Intermedio</td>
-                    <td>Avanzado</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- SECCIÓN NORMATIVAS -->
-        <section id="normativas" class="section">
-            <h2>Normativas y Códigos de Diseño</h2>
-            
-            <div class="definition-box">
-                <h3>Importancia de las Normativas</h3>
-                <p>Las normativas sismoresistentes establecen requisitos mínimos para el diseño y construcción de estructuras seguras. Cada país o región desarrolla su código basándose en su sismicidad, prácticas constructivas locales y experiencia de sismos pasados.</p>
-            </div>
-
-            <h3>Principales normativas internacionales:</h3>
-
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <h4>🇺🇸 Estados Unidos</h4>
-                    <p><strong>IBC</strong> - International Building Code</p>
-                    <p><strong>ASCE 7</strong> - Minimum Design Loads</p>
-                    <p><strong>ACI 318</strong> - Concreto estructural</p>
-                    <p><strong>AISC 341</strong> - Acero sismorresistente</p>
-                </div>
-                
-                <div class="concept-card">
-                    <h4>🇪🇺 Europa</h4>
-                    <p><strong>Eurocódigo 8</strong> - Diseño de estructuras para resistencia sísmica</p>
-                    <p>Base para códigos nacionales europeos</p>
-                    <p>Incluye análisis de peligrosidad sísmica</p>
-                </div>
-                
-                <div class="concept-card">
-                    <h4>🇯🇵 Japón</h4>
-                    <p><strong>Building Standard Law</strong></p>
-                    <p>Uno de los códigos más estrictos del mundo</p>
-                    <p>Tres niveles de sismos de diseño</p>
-                    <p>Tecnologías avanzadas de disipación</p>
-                </div>
-
-                <div class="concept-card">
-                    <h4>🌎 Latinoamérica</h4>
-                    <p><strong>Chile:</strong> NCh433 - Diseño Sísmico</p>
-                    <p><strong>Perú:</strong> E.030 Norma Sismoresistente</p>
-                    <p><strong>México:</strong> MOC-CFE / NTC-Sismo</p>
-                    <p><strong>Colombia:</strong> NSR-10</p>
-                </div>
-            </div>
-
-            <h3>Elementos comunes en las normativas:</h3>
-
-            <ul class="method-list">
-                <li>
-                    <strong>📍 Zonificación Sísmica</strong>
-                    <p>División del territorio en zonas según peligrosidad sísmica</p>
-                    <p><strong>Ejemplo:</strong> Zona 4 (alta), Zona 3 (moderada), Zona 2 (baja), Zona 1 (muy baja)</p>
-                </li>
-                
-                <li>
-                    <strong>🏗️ Factor de Importancia (U o I)</strong>
-                    <p>Multiplica las fuerzas sísmicas según la importancia de la edificación</p>
-                    <p><strong>Ejemplos:</strong></p>
-                    <ul style="margin-left: 20px; margin-top: 5px;">
-                        <li>Hospitales, estaciones de bomberos: U = 1.5</li>
-                        <li>Escuelas, teatros: U = 1.3</li>
-                        <li>Viviendas, oficinas: U = 1.0</li>
-                    </ul>
-                </li>
-                
-                <li>
-                    <strong>🌊 Clasificación de Suelos</strong>
-                    <p>Según velocidad de ondas de corte o características geotécnicas</p>
-                    <p><strong>Tipos típicos:</strong> Roca (S1), Suelo firme (S2), Suelo blando (S3), Especial (S4)</p>
-                </li>
-                
-                <li>
-                    <strong>📉 Factor de Reducción (R)</strong>
-                    <p>Permite diseñar con fuerzas menores considerando ductilidad del sistema</p>
-                    <p><strong>Valores típicos:</strong></p>
-                    <ul style="margin-left: 20px; margin-top: 5px;">
-                        <li>Pórticos especiales de concreto: R = 8</li>
-                        <li>Muros de corte: R = 6</li>
-                        <li>Pórticos ordinarios: R = 3</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="example-box">
-                <h4>📋 Ejemplo: Cálculo del cortante basal según normativa peruana (E.030)</h4>
-                
-                <p><strong>Datos del proyecto:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Edificio de oficinas en Lima (Zona 4: Z = 0.45)</li>
-                    <li>Suelo intermedio (S2: S = 1.05)</li>
-                    <li>Periodo fundamental: T = 0.6 seg</li>
-                    <li>Factor de importancia: U = 1.0 (edificio común)</li>
-                    <li>Sistema: Pórticos de concreto (R = 8)</li>
-                    <li>Peso total: P = 5000 Ton</li>
-                </ul>
-
-                <div class="formula-box" style="margin-top: 15px;">
-<strong>Fórmula del cortante basal:</strong>
-
-V = (Z × U × S × C / R) × P
-
-<strong>Paso 1: Factor de amplificación sísmica (C)</strong>
-C = 2.5 × (Tp / T) ≤ 2.5
-Tp = 0.6 seg (periodo del suelo S2)
-C = 2.5 × (0.6 / 0.6) = 2.5 ✓
-
-<strong>Paso 2: Cortante basal</strong>
-V = (0.45 × 1.0 × 1.05 × 2.5 / 8) × 5000
-V = 0.1477 × 5000
-V = 738.5 Ton
-
-<strong>Paso 3: Verificación mínima</strong>
-V_min = 0.125 × Z × U × S × P
-V_min = 0.125 × 0.45 × 1.0 × 1.05 × 5000 = 295.3 Ton
-738.5 > 295.3 ✓ Cumple
-                </div>
-
-                <p style="margin-top: 15px;"><strong>Resultado:</strong> El cortante basal de diseño es 738.5 Ton, que se distribuye en cada nivel según su masa y altura.</p>
-            </div>
-
-            <div class="danger-box">
-                <h4>⚠️ Filosofía de diseño sismoresistente</h4>
-                <p><strong>Tres niveles de desempeño esperado:</strong></p>
-                <ol style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Sismo frecuente (50% en 50 años):</strong> Sin daño estructural ni no estructural</li>
-                    <li><strong>Sismo ocasional (10% en 50 años):</strong> Daño no estructural reparable, sin daño estructural significativo</li>
-                    <li><strong>Sismo raro (2% en 50 años):</strong> Daño estructural severo pero sin colapso, protección de vidas</li>
-                </ol>
+                <h4>🔗 Relación entre estrategias y técnicas didácticas</h4>
+                <table>
+                    <tr>
+                        <th>Estrategia Didáctica</th>
+                        <th>Técnicas que puede incluir</th>
+                        <th>Momento de aplicación</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Aprendizaje Basado en Problemas (ABP)</strong></td>
+                        <td>Lluvia de ideas, estudio de casos, preguntas guiadas, mapas conceptuales</td>
+                        <td>A lo largo de todo el proceso de resolución del problema</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aprendizaje Cooperativo</strong></td>
+                        <td>Técnica Jigsaw, debates estructurados, presentaciones grupales, mapas conceptuales colaborativos</td>
+                        <td>Durante las fases de trabajo grupal y presentación</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clase Invertida</strong></td>
+                        <td>Videos explicativos (casa), resolución de problemas (aula), preguntas guiadas, discusión dirigida</td>
+                        <td>Videos antes de clase, técnicas activas durante la clase presencial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estudio de Casos</strong></td>
+                        <td>Análisis documental, lluvia de ideas, debate estructurado, juego de roles</td>
+                        <td>Análisis inicial, discusión grupal, presentación de conclusiones</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
-        <!-- SECCIÓN CASOS DE ESTUDIO -->
-        <section id="casos" class="section">
-            <h2>Casos de Estudio</h2>
+        <!-- SECCIÓN 4: MI MATERIAL DIDÁCTICO -->
+        <section id="material" class="section">
+            <h2>Mi Material Didáctico</h2>
             
-            <div class="definition-box">
-                <h3>Aprendiendo de la experiencia</h3>
-                <p>El análisis de sismos históricos y el comportamiento de estructuras reales es fundamental para mejorar nuestros códigos de diseño y prácticas constructivas. Cada evento sísmico proporciona lecciones valiosas que salvan vidas en futuros terremotos.</p>
-            </div>
+            <p style="font-size: 1.1em; margin-bottom: 20px;">A continuación presento los recursos didácticos originales que he elaborado para demostrar la aplicación práctica de la didáctica, estrategias y técnicas en la enseñanza de Ingeniería Sismoresistente.</p>
 
-            <h3>Caso 1: Terremoto de México 1985</h3>
+            <!-- RECURSO 1: INFOGRAFÍA -->
+            <h3>📊 Recurso Visual: Infografía Comparativa</h3>
+            <p>Esta infografía visual explica las diferencias entre didáctica, estrategia didáctica y técnica didáctica:</p>
             
-            <div class="danger-box">
-                <h4>📊 Datos del Sismo</h4>
-                <ul style="margin-left: 20px;">
-                    <li><strong>Magnitud:</strong> 8.1 Mw</li>
-                    <li><strong>Fecha:</strong> 19 de septiembre de 1985</li>
-                    <li><strong>Epicentro:</strong> Costa de Michoacán (350 km de Ciudad de México)</li>
-                    <li><strong>Profundidad:</strong> 15 km</li>
-                    <li><strong>Víctimas:</strong> ~10,000 personas</li>
-                </ul>
-            </div>
-
-            <div class="example-box">
-                <h4>🔍 Análisis de daños</h4>
-                <p><strong>Observaciones principales:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Amplificación por suelo blando:</strong> La zona del lago de Texcoco amplificó las ondas sísmicas hasta 5 veces</li>
-                    <li><strong>Resonancia:</strong> Edificios de 8-20 pisos (T ≈ 2 seg) entraron en resonancia con el periodo dominante del suelo</li>
-                    <li><strong>Colapso de edificios:</strong> 412 edificios colapsaron, 3,124 dañados severamente</li>
-                    <li><strong>Piso blando:</strong> Muchos colapsos ocurrieron por planta baja débil (comercios con grandes claros)</li>
-                    <li><strong>Columna corta:</strong> Fallas por interacción con muros de relleno parciales</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Lecciones aprendidas:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Importancia crítica de la caracterización del suelo</li>
-                    <li>Necesidad de considerar efectos de sitio en el diseño</li>
-                    <li>Prohibición de irregularidades severas en planta baja</li>
-                    <li>Mejora de requisitos de ductilidad en elementos</li>
-                    <li>Desarrollo del concepto de "columna fuerte - viga débil"</li>
-                </ul>
-            </div>
-
-            <h3 style="margin-top: 30px;">Caso 2: Terremoto de Chile 2010</h3>
-            
-            <div class="danger-box">
-                <h4>📊 Datos del Sismo</h4>
-                <ul style="margin-left: 20px;">
-                    <li><strong>Magnitud:</strong> 8.8 Mw (5° más fuerte registrado en la historia)</li>
-                    <li><strong>Fecha:</strong> 27 de febrero de 2010</li>
-                    <li><strong>Epicentro:</strong> Offshore Maule, Chile</li>
-                    <li><strong>Duración:</strong> ~3 minutos</li>
-                    <li><strong>Víctimas:</strong> ~525 personas (tsunami incluido)</li>
-                </ul>
-            </div>
-
-            <div class="example-box">
-                <h4>🔍 Análisis de desempeño</h4>
-                <p><strong>Aspectos positivos:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Bajo índice de colapsos considerando la magnitud del sismo</li>
-                    <li>Códigos sismorresistentes chilenos demostraron su efectividad</li>
-                    <li>Edificios modernos diseñados según NCh433 tuvieron buen desempeño</li>
-                    <li>Sistema de muros de corte se comportó adecuadamente</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Problemas identificados:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Muros delgados:</strong> Pandeo en compresión de muros esbeltos</li>
-                    <li><strong>Edificios altos:</strong> Daño concentrado en modos superiores</li>
-                    <li><strong>Conexiones:</strong> Fallas en uniones losa-muro</li>
-                    <li><strong>Elementos no estructurales:</strong> Daño significativo en tabiques y fachadas</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Mejoras implementadas post-sismo:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Aumento del espesor mínimo de muros de corte</li>
-                    <li>Mejora de detallamiento en conexiones</li>
-                    <li>Mayor consideración de modos superiores en edificios altos</li>
-                    <li>Requisitos más estrictos para elementos no estructurales</li>
-                </ul>
-            </div>
-
-            <h3 style="margin-top: 30px;">Caso 3: Terremoto de Japón 2011 (Tohoku)</h3>
-            
-            <div class="danger-box">
-                <h4>📊 Datos del Sismo</h4>
-                <ul style="margin-left: 20px;">
-                    <li><strong>Magnitud:</strong> 9.1 Mw (más fuerte en la historia de Japón)</li>
-                    <li><strong>Fecha:</strong> 11 de marzo de 2011</li>
-                    <li><strong>Tipo:</strong> Megaterremoto de subducción</li>
-                    <li><strong>Duración:</strong> ~6 minutos</li>
-                    <li><strong>Tsunami:</strong> Olas de hasta 40 metros</li>
-                    <li><strong>Víctimas:</strong> ~19,000 personas (90% por tsunami)</li>
-                </ul>
-            </div>
-
-            <div class="example-box">
-                <h4>🔍 Desempeño estructural extraordinario</h4>
-                <p><strong>Éxitos del código japonés:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Mínimo colapso de edificios modernos a pesar de la magnitud excepcional</li>
-                    <li>Sistemas de aislamiento sísmico funcionaron perfectamente</li>
-                    <li>Disipadores de energía redujeron significativamente el daño</li>
-                    <li>Edificios con tecnología avanzada prácticamente sin daño</li>
-                    <li>Sistema de alerta temprana permitió evacuaciones</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Tecnologías que salvaron vidas:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Aisladores sísmicos:</strong> Edificios que "flotan" sobre bases flexibles</li>
-                    <li><strong>Amortiguadores de masa:</strong> Péndulos en edificios altos (Tokyo Skytree)</li>
-                    <li><strong>Marcos de acero con arriostramiento excéntrico:</strong> Gran disipación de energía</li>
-                    <li><strong>Muros con fibra de carbono:</strong> Refuerzo de estructuras existentes</li>
-                </ul>
-
-                <p style="margin-top: 15px;"><strong>Lección principal:</strong> La inversión en tecnologías avanzadas de protección sísmica puede reducir dramáticamente las pérdidas humanas y materiales, incluso en eventos extremos.</p>
-            </div>
-
-            <!-- INFOGRAFÍA COMPARATIVA -->
             <div class="infografia">
-                <h3 style="text-align: center; margin-bottom: 20px;">📊 Infografía Comparativa</h3>
-                <h4 style="text-align: center; margin-bottom: 30px;">Evolución del Diseño Sismoresistente</h4>
+                <h3 style="text-align: center; margin-bottom: 20px;">Diferencias entre Didáctica, Estrategias y Técnicas</h3>
+                <h4 style="text-align: center; margin-bottom: 30px; font-size: 1.1em;">Aplicado a la enseñanza de Ingeniería Sismoresistente</h4>
                 
                 <div class="infografia-row">
                     <div class="infografia-item">
-                        <h4>📐 ENFOQUE TRADICIONAL</h4>
-                        <p><strong>Filosofía:</strong> Resistencia</p>
-                        <p style="margin-top: 10px;"><strong>Principio:</strong> Diseñar elementos muy resistentes para evitar daño</p>
-                        <p style="margin-top: 10px;"><strong>Desventaja:</strong> Costoso y poco práctico para sismos severos</p>
-                        <p style="margin-top: 10px;"><strong>Época:</strong> Antes de 1960s</p>
+                        <h4>📚 DIDÁCTICA</h4>
+                        <p><strong>¿Qué es?</strong></p>
+                        <p>La ciencia y arte de enseñar</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Nivel:</strong></p>
+                        <p>Marco teórico-práctico general</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Función:</strong></p>
+                        <p>Estudia y fundamenta cómo ocurre el aprendizaje y cómo facilitarlo</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Pregunta clave:</strong></p>
+                        <p>¿Cómo enseñar de manera efectiva?</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Analogía:</strong></p>
+                        <p>Es como la arquitectura que establece los principios para construir</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Ejemplo:</strong></p>
+                        <p>Principio didáctico: "Partir de lo concreto hacia lo abstracto" - enseñar sismos mostrando videos reales antes de las ecuaciones</p>
                     </div>
                     
                     <div class="infografia-item">
-                        <h4>🎯 ENFOQUE MODERNO</h4>
-                        <p><strong>Filosofía:</strong> Ductilidad</p>
-                        <p style="margin-top: 10px;"><strong>Principio:</strong> Permitir deformación controlada sin colapso</p>
-                        <p style="margin-top: 10px;"><strong>Ventaja:</strong> Diseño más económico y realista</p>
-                        <p style="margin-top: 10px;"><strong>Época:</strong> 1970s - presente</p>
+                        <h4>🎯 ESTRATEGIAS DIDÁCTICAS</h4>
+                        <p><strong>¿Qué son?</strong></p>
+                        <p>Planes organizados para alcanzar objetivos</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Nivel:</strong></p>
+                        <p>Planificación y diseño del proceso</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Función:</strong></p>
+                        <p>Guiar el proceso educativo completo hacia metas específicas</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Pregunta clave:</strong></p>
+                        <p>¿Qué camino seguir para lograr el aprendizaje?</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Analogía:</strong></p>
+                        <p>Es como el plano estructural que organiza todo el edificio</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Ejemplo:</strong></p>
+                        <p>Estrategia ABP: "Resolver el problema de diseñar un edificio en zona sísmica" - incluye investigación, análisis, propuesta y presentación</p>
                     </div>
                     
                     <div class="infografia-item">
-                        <h4>🚀 ENFOQUE AVANZADO</h4>
-                        <p><strong>Filosofía:</strong> Control y Disipación</p>
-                        <p style="margin-top: 10px;"><strong>Principio:</strong> Tecnologías activas/pasivas que reducen la demanda sísmica</p>
-                        <p style="margin-top: 10px;"><strong>Tecnologías:</strong> Aisladores, amortiguadores, péndulos</p>
-                        <p style="margin-top: 10px;"><strong>Época:</strong> 1990s - futuro</p>
+                        <h4>🛠️ TÉCNICAS DIDÁCTICAS</h4>
+                        <p><strong>¿Qué son?</strong></p>
+                        <p>Herramientas específicas de aplicación</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Nivel:</strong></p>
+                        <p>Ejecución práctica y concreta</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Función:</strong></p>
+                        <p>Implementar las estrategias en acciones puntuales</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Pregunta clave:</strong></p>
+                        <p>¿Con qué herramientas logro cada paso?</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Analogía:</strong></p>
+                        <p>Son las herramientas concretas para construir (martillo, nivel, etc.)</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Ejemplo:</strong></p>
+                        <p>Lluvia de ideas sobre causas de colapso, estudio del caso Chile 2010, demostración con modelo a escala</p>
                     </div>
                 </div>
 
                 <div class="arrow">⬇️</div>
 
-                <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px;">
-                    <h4 style="text-align: center;">Progreso hacia edificios más seguros y resilientes</h4>
-                    <p style="text-align: center; margin-top: 15px; font-size: 1.1em;">
-                        Resistencia → Ductilidad → Control de daño → Protección total
+                <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; text-align: center;">
+                    <h4>Relación jerárquica e integración:</h4>
+                    <p style="font-size: 1.2em; margin-top: 15px;">
+                        <strong>DIDÁCTICA</strong> (principios generales) →<br>
+                        <strong>ESTRATEGIAS</strong> (plan de acción) →<br>
+                        <strong>TÉCNICAS</strong> (herramientas específicas)
+                    </p>
+                    <p style="margin-top: 15px; font-size: 0.95em;">
+                        Los tres elementos trabajan en conjunto para lograr un aprendizaje significativo y efectivo
                     </p>
                 </div>
             </div>
 
-            <!-- REFLEXIÓN FINAL -->
-            <div class="reflection-box">
-                <h3>💭 Reflexión: La importancia de la Ingeniería Sismoresistente</h3>
+            <!-- RECURSO 2: FICHA DIDÁCTICA -->
+            <h3 style="margin-top: 40px;">📝 Ficha de Secuencia Didáctica</h3>
+            <p>Ejemplo concreto de planificación aplicando estrategias y técnicas:</p>
+            
+            <table>
+                <tr>
+                    <th colspan="2" style="background: #dc2626; text-align: center; font-size: 1.2em;">
+                        Secuencia Didáctica: "Análisis Sísmico de Estructuras"
+                    </th>
+                </tr>
+                <tr>
+                    <td style="width: 30%;"><strong>Asignatura:</strong></td>
+                    <td>Ingeniería Sismoresistente</td>
+                </tr>
+                <tr>
+                    <td><strong>Nivel educativo:</strong></td>
+                    <td>Sexto semestre - Ingeniería Civil</td>
+                </tr>
+                <tr>
+                    <td><strong>Duración:</strong></td>
+                    <td>4 sesiones de 90 minutos cada una (6 horas totales)</td>
+                </tr>
+                <tr>
+                    <td><strong>Número de estudiantes:</strong></td>
+                    <td>32 estudiantes (8 grupos de 4)</td>
+                </tr>
+            </table>
+
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th colspan="2" style="background: #1e3c72;">OBJETIVO DE APRENDIZAJE</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p style="margin: 10px 0;"><strong>Objetivo general:</strong></p>
+                        <p>Los estudiantes serán capaces de analizar y evaluar el comportamiento sísmico de una estructura mediante la aplicación del método de análisis modal espectral, identificando sus modos de vibración, calculando el cortante basal, y proponiendo mejoras al diseño estructural para garantizar la seguridad sísmica.</p>
+                        
+                        <p style="margin: 15px 0 10px 0;"><strong>Objetivos específicos:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Comprender el concepto de periodo fundamental y modos de vibración de una estructura</li>
+                            <li>Aplicar correctamente el método de análisis modal espectral utilizando software especializado</li>
+                            <li>Interpretar resultados de derivas de entrepiso y compararlos con límites normativos</li>
+                            <li>Proponer soluciones estructurales para mejorar el desempeño sísmico</li>
+                            <li>Comunicar hallazgos técnicos de manera clara y fundamentada</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th colspan="2" style="background: #2a5298;">ESTRATEGIA DIDÁCTICA UTILIZADA</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h4 style="margin: 10px 0;">Aprendizaje Basado en Problemas (ABP) + Aprendizaje Cooperativo</h4>
+                        <p><strong>Justificación de la estrategia:</strong></p>
+                        <p>Se selecciona el ABP porque simula situaciones reales que los estudiantes enfrentarán como ingenieros profesionales, desarrollando habilidades de análisis, toma de decisiones y resolución de problemas complejos. Se combina con aprendizaje cooperativo para fomentar el trabajo en equipo, típico de la práctica profesional de la ingeniería.</p>
+                        
+                        <p style="margin-top: 15px;"><strong>Problema planteado:</strong></p>
+                        <p>"Un cliente les ha contratado para evaluar la seguridad sísmica de un edificio existente de oficinas de 6 pisos ubicado en zona de alta sismicidad. Se les proporcionan los planos estructurales originales. Deben analizar la estructura, determinar si cumple con la normativa actual, y proponer modificaciones si son necesarias."</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th style="width: 20%;">Sesión</th>
+                    <th style="width: 25%;">Técnica Didáctica</th>
+                    <th>Descripción de la actividad</th>
+                    <th style="width: 15%;">Duración</th>
+                </tr>
+                <tr>
+                    <td rowspan="3"><strong>Sesión 1:<br>Comprensión del problema</strong></td>
+                    <td><strong>Presentación del caso</strong></td>
+                    <td>El docente presenta el problema: edificio existente con planos estructurales, ubicación, tipo de suelo. Explica el contexto: normativa actual más estricta que cuando se construyó.</td>
+                    <td>20 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Lluvia de ideas</strong></td>
+                    <td>En grupos, los estudiantes listan qué información necesitan conocer para resolver el problema: cargas sísmicas, propiedades del suelo, características de materiales, normativa aplicable, software requerido.</td>
+                    <td>25 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Preguntas guiadas</strong></td>
+                    <td>El docente orienta mediante preguntas: "¿Qué parámetros sísmicos necesitan?" "¿Qué método de análisis es apropiado?" "¿Qué verificaciones debe cumplir la estructura?" Los estudiantes van descubriendo el camino.</td>
+                    <td>45 min</td>
+                </tr>
                 
-                <p>La ingeniería sismoresistente no es solo una especialización técnica dentro de la ingeniería civil; es una responsabilidad ética fundamental con la sociedad. Cada estructura que diseñamos puede significar la diferencia entre la vida y la muerte durante un terremoto. Los casos históricos nos enseñan que los sismos son inevitables, pero las tragedias no tienen por qué serlo. Un edificio bien diseñado es un refugio seguro; uno mal diseñado se convierte en una trampa mortal.</p>
+                <tr>
+                    <td rowspan="2"><strong>Sesión 2:<br>Investigación y modelado</strong></td>
+                    <td><strong>Investigación guiada</strong></td>
+                    <td>Cada grupo investiga: consulta la normativa sismoresistente local (factores Z, U, S, C, R), busca las características del suelo de la zona, revisa documentación de software de análisis estructural (ETABS o SAP2000).</td>
+                    <td>30 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Demostración práctica</strong></td>
+                    <td>El docente realiza una demostración en vivo de cómo modelar una estructura simple en el software: definir materiales, secciones, elementos estructurales, cargas, y ejecutar análisis modal. Los estudiantes replican con su edificio.</td>
+                    <td>60 min</td>
+                </tr>
                 
-                <p style="margin-top: 20px;">Los métodos de análisis, las normativas y las tecnologías que estudiamos no son abstracciones académicas, sino herramientas que han sido perfeccionadas a través de décadas de investigación, experiencia y, lamentablemente, de tragedias que nos han enseñado lecciones dolorosas. Cada requisito normativo, cada factor de seguridad, cada detalle constructivo tiene detrás la historia de ingenieros que aprendieron qué funciona y qué no, muchas veces después de ver el fracaso de sus diseños previos. Como futuros ingenieros civiles, heredamos esta sabiduría acumulada y la responsabilidad de aplicarla con rigor, honestidad y compromiso profesional. Nuestro trabajo no es solo calcular estructuras, sino proteger vidas y garantizar que las comunidades puedan recuperarse después de un desastre. En una profesión donde los errores se pagan con vidas humanas, la excelencia técnica y la ética profesional no son opcionales: son imperativas.</p>
+                <tr>
+                    <td rowspan="2"><strong>Sesión 3:<br>Análisis e interpretación</strong></td>
+                    <td><strong>Trabajo cooperativo</strong></td>
+                    <td>Los grupos ejecutan el análisis modal espectral de su edificio. Cada miembro tiene roles: uno verifica datos de entrada, otro analiza modos de vibración, otro revisa derivas, otro calcula cortante basal. Rotan roles para que todos practiquen.</td>
+                    <td>50 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Estudio de casos comparativo</strong></td>
+                    <td>El docente presenta casos reales de edificios que fallaron durante sismos por no cumplir con derivas máximas o por tener irregularidades. Los grupos comparan con sus resultados y reflexionan sobre las consecuencias.</td>
+                    <td>40 min</td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="3"><strong>Sesión 4:<br>Propuesta y presentación</strong></td>
+                    <td><strong>Resolución de problemas</strong></td>
+                    <td>Si la estructura no cumple normativa, los grupos proponen soluciones: agregar muros de corte, reforzar columnas, instalar disipadores. Modelan las mejoras y verifican que funcionen.</td>
+                    <td>40 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Presentación oral</strong></td>
+                    <td>Cada grupo presenta en 8 minutos: problema encontrado, análisis realizado, resultados obtenidos, comparación con normativa, propuesta de solución. Usan mapas conceptuales y tablas para sintetizar.</td>
+                    <td>40 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Debate estructurado</strong></td>
+                    <td>Otros grupos hacen preguntas técnicas: "¿Por qué eligieron muros en vez de pórticos?" "¿Consideraron el costo?" El grupo expositor defiende sus decisiones con argumentos técnicos.</td>
+                    <td>10 min</td>
+                </tr>
+            </table>
+
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th colspan="2" style="background: #16a34a;">EVALUACIÓN DEL APRENDIZAJE</th>
+                </tr>
+                <tr>
+                    <td style="width: 30%;"><strong>Tipo:</strong></td>
+                    <td>Evaluación mixta: formativa + sumativa</td>
+                </tr>
+                <tr>
+                    <td><strong>Instrumentos:</strong></td>
+                    <td>
+                        <ul style="margin-left: 20px;">
+                            <li>Rúbrica para evaluar presentación grupal (40%)</li>
+                            <li>Revisión del modelo estructural y memoria de cálculo (30%)</li>
+                            <li>Evaluación individual de comprensión conceptual (20%)</li>
+                            <li>Autoevaluación y coevaluación del trabajo en equipo (10%)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Criterios principales:</strong></td>
+                    <td>Correcta aplicación del método, interpretación acertada de resultados, viabilidad de propuestas, fundamentación técnica, claridad en comunicación, trabajo colaborativo efectivo</td>
+                </tr>
+            </table>
+
+            <div class="example-box" style="margin-top: 30px;">
+                <h4>💡 Justificación de las técnicas seleccionadas</h4>
+                <p><strong>Lluvia de ideas:</strong> Permite activar conocimientos previos y que los estudiantes identifiquen por sí mismos qué necesitan aprender, promoviendo el aprendizaje autodirigido.</p>
+                <p style="margin-top: 10px;"><strong>Preguntas guiadas:</strong> Desarrolla pensamiento crítico y evita dar respuestas directas, facilitando que los estudiantes construyan su propio conocimiento.</p>
+                <p style="margin-top: 10px;"><strong>Demostración práctica:</strong> Necesaria para software especializado; permite modelar el uso correcto antes de la práctica independiente.</p>
+                <p style="margin-top: 10px;"><strong>Trabajo cooperativo con roles:</strong> Asegura participación equitativa y desarrollo de habilidades interpersonales esenciales en ingeniería.</p>
+                <p style="margin-top: 10px;"><strong>Estudio de casos:</strong> Conecta teoría con consecuencias reales, aumentando la motivación y comprensión de la importancia del tema.</p>
+                <p style="margin-top: 10px;"><strong>Presentación y debate:</strong> Desarrolla habilidades de comunicación técnica y capacidad de defender decisiones con argumentos sólidos.</p>
             </div>
 
-            <div class="warning-box">
-                <h4>🎓 Mensaje para estudiantes de Ingeniería Civil</h4>
-                <p style="font-size: 1.1em;">Dominar la ingeniería sismoresistente requiere:</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Sólidos fundamentos en mecánica estructural y dinámica</li>
-                    <li>Comprensión profunda de los códigos de diseño</li>
-                    <li>Habilidad en el uso de software especializado</li>
-                    <li>Conocimiento de materiales y procesos constructivos</li>
-                    <li>Conciencia sobre la importancia de la calidad en la construcción</li>
-                    <li>Compromiso ético con la seguridad pública</li>
-                </ul>
-                <p style="margin-top: 15px;"><strong>Recuerda:</strong> Las estructuras que diseñes albergarán vidas humanas durante décadas. Tu responsabilidad trasciende las ecuaciones y llega hasta las familias que confiarán su seguridad en tu trabajo.</p>
+            <!-- RECURSO 3: REFLEXIÓN -->
+            <div class="reflection-box" style="margin-top: 40px;">
+                <h3>💭 Reflexión: La importancia de la didáctica en la práctica docente</h3>
+                
+                <p>La didáctica es el corazón de la práctica docente efectiva, especialmente en disciplinas técnicas como la ingeniería. No basta con ser un experto en cálculo estructural o análisis sísmico; un buen docente debe saber cómo transformar ese conocimiento complejo en aprendizajes significativos y duraderos. La didáctica nos proporciona los fundamentos teóricos y prácticos para diseñar experiencias de aprendizaje que consideren cómo aprenden realmente los estudiantes, respetando sus ritmos, estilos y conocimientos previos. Un ingeniero puede conocer perfectamente las ecuaciones de dinámica estructural, pero si no comprende los principios didácticos de construcción del conocimiento, fracasará en transmitir esa comprensión a sus estudiantes. La didáctica nos enseña que aprender ingeniería no es memorizar fórmulas, sino desarrollar capacidades de análisis, resolución de problemas y toma de decisiones fundamentadas. Por ello, todo docente de ingeniería debe ser, simultáneamente, un ingeniero competente y un educador consciente de los procesos cognitivos que facilitan el aprendizaje.</p>
+                
+                <p style="margin-top: 20px;">Las estrategias y técnicas didácticas son las herramientas que materializan estos principios en el aula. Una estrategia bien elegida puede convertir un tema árido en una experiencia fascinante: el Aprendizaje Basado en Problemas transforma el análisis sísmico de una lista de ecuaciones en un desafío profesional real donde los estudiantes deben pensar, investigar y decidir como ingenieros. Las técnicas, por su parte, son los momentos específicos donde ocurre la magia del aprendizaje: una demostración con un modelo físico puede hacer visible lo invisible (cómo vibra una estructura), una lluvia de ideas activa el pensamiento divergente, un estudio de caso conecta teoría con consecuencias reales. El impacto es profundo y medible: estudiantes que aprenden con ABP no solo obtienen mejores calificaciones, sino que desarrollan competencias profesionales más sólidas; aquellos que participan en aprendizaje cooperativo no solo comprenden mejor los contenidos, sino que aprenden a trabajar en equipo como lo harán en su vida profesional. La didáctica, las estrategias y las técnicas no son adornos pedagógicos opcionales: son la diferencia entre formar ingenieros que solo calculan y formar profesionales que piensan, innovan y resuelven los problemas complejos que enfrentará nuestra sociedad.</p>
             </div>
         </section>
 
         <footer>
-            <p>© 2024 - Material Educativo de Ingeniería Sismoresistente</p>
+            <p>© 2024 - Material Didáctico Digital de Ingeniería Sismoresistente</p>
             <p style="margin-top: 10px; color: #666;">Carrera de Ingeniería Civil</p>
-            <p style="margin-top: 5px; color: #888; font-size: 0.9em;">Desarrollado con el compromiso de formar ingenieros responsables</p>
+            <p style="margin-top: 5px; color: #888; font-size: 0.9em;">Elaborado como trabajo académico sobre didáctica aplicada</p>
         </footer>
     </div>
 

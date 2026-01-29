@@ -1,60 +1,105 @@
-# 🏗️ Ingeniería Sismoresistente - Material Educativo
+# 🎓 Didáctica en Ingeniería Sismoresistente
 
-Material educativo interactivo para estudiantes de Ingeniería Civil sobre fundamentos, métodos de análisis y diseño sismoresistente.
+Material didáctico digital que demuestra la aplicación de estrategias y técnicas didácticas en la enseñanza de Ingeniería Sismoresistente.
 
 ## 📋 Descripción
 
-Este proyecto es un sitio web educativo diseñado para complementar el aprendizaje de la materia de Ingeniería Sismoresistente. Incluye explicaciones detalladas, ejemplos prácticos, casos de estudio reales y recursos didácticos visuales.
+Este proyecto es un sitio web educativo desarrollado como trabajo académico para demostrar la comprensión y aplicación de conceptos didácticos fundamentales: didáctica, estrategias didácticas y técnicas didácticas, todos aplicados al contexto de la enseñanza de Ingeniería Civil, específicamente en el área de diseño sismoresistente.
 
 ## 🎯 Contenido
 
-### 1. Fundamentos de Ingeniería Sismoresistente
-- ¿Qué es la ingeniería sismoresistente?
-- Ondas sísmicas y su propagación
-- Escalas de medición (Richter, Mercalli, PGA)
-- Respuesta estructural ante sismos
-- Sistemas estructurales sismoresistentes
+### Inicio
+- Presentación del autor (estudiante de Ingeniería Civil)
+- Propósito del sitio web
+- Contexto de aplicación: Ingeniería Sismoresistente
 
-### 2. Métodos de Análisis Sísmico
-- **Método Estático Equivalente**: Para estructuras regulares simples
-- **Análisis Modal Espectral**: Método más utilizado profesionalmente
-- **Análisis Tiempo-Historia**: Para estructuras complejas
-- Ejemplos de aplicación paso a paso
-- Comparación de métodos
+### 1. ¿Qué es la Didáctica?
+- Definición conceptual de didáctica
+- Elementos fundamentales (docente, estudiante, contenido, contexto, métodos)
+- **Ejemplo de situación de aula**: Enseñanza del concepto "periodo fundamental de vibración"
+- Aplicación didáctica paso a paso en ingeniería
 
-### 3. Normativas y Códigos
-- Principales normativas internacionales (IBC, ASCE 7, Eurocódigo 8, códigos latinoamericanos)
-- Zonificación sísmica
-- Factores de diseño (Z, U, S, C, R)
-- Filosofía de diseño por desempeño
-- Ejemplo práctico de cálculo según normativa peruana
+### 2. Estrategias Didácticas
+- Definición de estrategias didácticas
+- **Ejemplo 1**: Aprendizaje Basado en Problemas (ABP) aplicado al diseño de edificios en zona sísmica
+- **Ejemplo 2**: Aprendizaje Cooperativo aplicado al análisis del terremoto de Chile 2010
+- Tabla comparativa de estrategias (ABP, Cooperativo, Clase Invertida, Estudio de Casos)
 
-### 4. Casos de Estudio
-- **Terremoto de México 1985**: Lecciones sobre amplificación de suelos blandos
-- **Terremoto de Chile 2010**: Desempeño de muros de corte
-- **Terremoto de Japón 2011**: Éxito de tecnologías avanzadas
-- Análisis de daños y mejoras implementadas
+### 3. Técnicas Didácticas
+- Definición de técnicas didácticas
+- Lista detallada con 6 técnicas:
+  - Lluvia de ideas
+  - Estudio de casos
+  - Preguntas guiadas
+  - Mapas conceptuales
+  - Simulación y juego de roles
+  - Demostraciones prácticas
+- Aplicación específica de cada técnica en ingeniería sismoresistente
+- Tabla que relaciona estrategias con técnicas
+
+### 4. Mi Material Didáctico
+- **Infografía visual**: Diferencias entre didáctica, estrategias y técnicas
+- **Ficha de secuencia didáctica**: Análisis sísmico de estructuras
+  - Objetivo de aprendizaje detallado
+  - Estrategia utilizada: ABP + Aprendizaje Cooperativo
+  - Descripción de técnicas en cada sesión (4 sesiones de 90 min)
+  - Sistema de evaluación
+- **Texto reflexivo**: Importancia de la didáctica en ingeniería (2 párrafos)
 
 ## 🚀 Características
 
-- ✅ Diseño responsive (adaptable a móviles y tablets)
-- ✅ Navegación intuitiva entre secciones
-- ✅ Ejemplos prácticos con cálculos detallados
-- ✅ Infografías comparativas
-- ✅ Casos de estudio reales documentados
-- ✅ Reflexiones sobre ética profesional
-- ✅ Un solo archivo HTML (fácil de compartir y desplegar)
+- ✅ Cumple con requisitos académicos de estructura didáctica
+- ✅ Tres secciones principales: Didáctica, Estrategias, Técnicas
+- ✅ Ejemplos propios aplicados a Ingeniería Sismoresistente
+- ✅ Infografía comparativa original
+- ✅ Secuencia didáctica completa con técnicas específicas
+- ✅ Reflexión sobre la importancia de la didáctica (2 párrafos)
+- ✅ Diseño responsive (móvil, tablet, desktop)
+- ✅ Navegación intuitiva
+- ✅ Un solo archivo HTML (fácil de desplegar)
 
+## 📦 Uso
 
+### Opción 1: Visualización local
+1. Descarga el archivo `index.html`
+2. Ábrelo con cualquier navegador web moderno (Chrome, Firefox, Edge, Safari)
+
+### Opción 2: Despliegue en GitHub Pages
+1. Haz fork de este repositorio
+2. El archivo ya se llama `index.html` (listo para GitHub Pages)
+3. Ve a Settings → Pages
+4. Selecciona la rama `main` como fuente
+5. Tu sitio estará disponible en: `https://tu-usuario.github.io/nombre-repositorio/`
+
+### Opción 3: Despliegue en otros servicios
+- **Netlify**: Arrastra y suelta el archivo HTML
+- **Vercel**: Importa el repositorio
+- **GitHub Pages**: Renombra el archivo a `index.html`
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3 (Flexbox, Grid, Gradientes, Animaciones)
+- JavaScript (ES6+)
+- Diseño responsive sin frameworks externos
 
 ## 📚 Para estudiantes
 
 Este material está diseñado para:
-- Complementar clases teóricas de ingeniería sismoresistente
-- Repasar conceptos antes de exámenes
-- Consultar ejemplos prácticos de cálculo
-- Entender la aplicación real de normativas
-- Aprender de casos históricos
+- Demostrar la comprensión de conceptos didácticos fundamentales
+- Aplicar didáctica, estrategias y técnicas en un contexto técnico real
+- Cumplir con requisitos académicos de trabajos sobre didáctica
+- Servir como ejemplo de integración teoría-práctica
+- Presentar material didáctico digital original
+
+## ✅ Requisitos académicos cumplidos
+
+✓ **Tres secciones principales**: Didáctica, Estrategias Didácticas, Técnicas Didácticas  
+✓ **Definiciones con ejemplos propios** de Ingeniería Sismoresistente  
+✓ **Infografía comparativa** explicando diferencias entre los tres conceptos  
+✓ **Secuencia didáctica completa** con objetivo, estrategia y técnicas específicas  
+✓ **Reflexión personal** (2 párrafos) sobre importancia de la didáctica  
+✓ **Estructura completa**: Inicio con presentación, propósito, secciones temáticas y material didáctico
 
 ## 🤝 Contribuciones
 
@@ -66,6 +111,9 @@ Las contribuciones son bienvenidas. Si deseas mejorar el contenido:
 4. Push a la rama (`git push origin feature/mejora`)
 5. Abre un Pull Request
 
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ## ✍️ Autor
 
@@ -83,6 +131,6 @@ Para preguntas, sugerencias o reportar errores, abre un issue en este repositori
 
 ---
 
-**⚠️ Nota importante**: Este material es de carácter educativo. Para diseños estructurales reales, siempre consulta las normativas vigentes en tu país y la supervisión de ingenieros licenciados.
+**⚠️ Nota académica**: Este material ha sido desarrollado como trabajo académico sobre didáctica aplicada a Ingeniería Civil. Cumple con los requisitos de estructura (inicio, 3 secciones temáticas, material didáctico), contenido (definiciones, ejemplos propios, infografía, secuencia didáctica, reflexión) y formato (web navegable con recursos visuales).
 
-**🏗️ "La ingeniería sismoresistente no es solo una especialización técnica; es una responsabilidad ética con la sociedad"**
+**🎓 "La didáctica transforma el conocimiento técnico en aprendizaje significativo"**
